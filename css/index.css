@@ -1,0 +1,711 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "ClashDisplay";
+    src: url("../fonts/ClashDisplay-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url("../fonts/Satoshi-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px 19px 24px;
+}
+
+.header__actions {
+    padding-top: 8px;
+    padding-bottom: 9px;
+    display: flex;
+    gap: 20px;
+}
+
+.header__svg {
+    vertical-align: middle;
+}
+
+.brand__content {
+    padding: 40px 24px 24px 24px;
+    background-color: var(--Dark-Primary, #2A254B);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media screen and (min-width: 1024px) {
+    .brand__content{
+        padding: 60px 98px 60px 60px;
+    }
+}
+
+.brand__main {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.brand__img {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .brand__img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+
+
+.brand__title {
+    color: var(--White, #FFF);
+    font-family: "ClashDisplay";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-bottom: 81px;
+}
+
+@media screen and (min-width: 1024px) {
+    .brand__title{
+        max-width: 513px;
+        margin-bottom: 41px;
+    }
+}
+
+.brand__subtitle {
+    color: var(--White, #FFF);
+    font-family: "Satoshi";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1024px) {
+    .brand__subtitle{
+        order: 3;
+        margin-top: auto;
+        margin-bottom: 0;
+        max-width: 602px;
+    }
+}
+
+.brand__button {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .brand__button {
+        width: auto;
+    }
+}
+
+.different {
+    padding: 48px 24px 45px 24px;
+}
+
+.different__body {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 36px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .different__body {
+        flex-direction: row;
+        gap: 58px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .different__column {
+        max-width: 265px;
+    }
+}
+
+
+.different__column {
+    flex-direction: column;
+}
+
+.different__header {
+    color: #2A254B;
+    margin-bottom: 36px;
+    font-style: normal;
+    font-family: "ClashDisplay";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+    max-width: 274px;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .different__header {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+
+.different__img {
+    margin-bottom: 16px;
+}
+
+.different__title {
+    color: #2A254B;
+    margin-bottom: 12px;
+    font-family: "ClashDisplay";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.different__subtitle {
+    color: #2A254B;
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.ceramics__body {
+    padding: 48px 24px 38px 24px;
+}
+
+@media screen and (min-width: 1024px) {
+    .ceramics__body {
+        padding: 0;
+        margin-bottom: 120px;
+    }
+}
+
+.ceramics__header {
+    margin-bottom: 19px;
+    color: #2A254B;
+    font-family: "ClashDisplay";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (min-width: 1024px) {
+    .ceramics__header {
+        padding-top: 80px;
+        font-size: 32px;
+        font-weight: 400;
+    }
+}
+
+.ceramics-item {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 20px;
+    padding-bottom: 29px;   
+}
+
+@media screen and (min-width: 1024px) {
+    .ceramics-item {
+        flex-wrap: nowrap;
+    }
+}
+
+.ceramics-item__column {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 20px);
+}
+
+@media screen and (min-width:1024px) {
+    .ceramics-item__column{
+        width: calc(25% - 60px);
+    }
+}
+
+.ceramics-item__img {
+    margin-bottom: 24px;
+    min-height: 201px;
+}
+
+@media screen and (min-width: 1024px) {
+    .ceramics-item__img {
+        height: 375px;
+    }
+}
+
+.ceramics-item__title {
+    margin-bottom: 8px;
+    color: #2A254B;
+    font-family: "ClashDisplay";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.ceramics-item__price {
+    color: #2A254B;
+    font-family: "Satoshi";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.ceramics__button {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .ceramics__button {
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+.listings__body {
+    padding: 46px 0px 38px 24px;
+}
+
+@media screen and (min-width: 1024px) {
+    .listings__body {
+        padding: 0;
+    }
+}
+
+.listings__header {
+    margin-bottom: 36px;
+    color: #2A254B;
+    font-family: "ClashDisplay";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (min-width:1024px) {
+    .listings__header{
+        color: #2A254B;
+        font-family: "ClashDisplay";
+        font-size: 32px;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.listings__row {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.listings__column {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+    .listings__column {
+        flex-grow: 1;
+    }
+}
+
+.item-listings__icon {
+    margin-bottom: 24px;
+}
+
+.img {
+    object-fit: cover;
+    height: 251px;
+}
+
+@media screen and (min-width: 1024px) {
+    .img {
+        width: 100%;
+        height: 375px;
+    }
+}
+
+
+
+.item-listings__title {
+    margin-bottom: 8px;
+    color: #2A254B;
+    font-family: "ClashDisplay";
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.item-listings__price {
+    margin-bottom: 32px;
+    color: #2A254B;
+    font-family: "Satoshi";
+    font-size: 18px;
+    line-height: 150%;
+}
+
+@media screen and (min-width: 1024px) {
+    .item-listings__price{
+        margin-bottom: 42px;
+    }
+}
+
+.listings__button {
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .listings__button {
+        width: auto;
+        margin: 0 auto;
+    }
+}
+
+.email {
+    padding: 48px 24px 38px 24px;
+}
+
+@media screen and (min-width: 1024px) {
+    .email {
+        margin-top: 48px;
+        background-color: #F9F9F9;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .email__body {
+        padding: 0;
+        background-color: #fff;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .email__content {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+.email__title {
+    color: #2A254B;
+    font-family: "ClashDisplay";
+    font-size: 20px;
+    line-height: 140%;
+    margin-bottom: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+    .email__title {
+        font-size: 36px;
+        color: #2A254B;
+        font-family: "ClashDisplay";
+        line-height: 140%;
+    }
+}
+
+.email__subtitle {
+    color: var(--Dark-Primary, #2A254B);
+    font-family: "Satoshi";
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 64px;
+}
+
+@media screen and (min-width: 1024px) {
+    .email__subtitle {
+        font-family: "Satoshi";
+        margin: 0 auto;
+        max-width: 470px;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 72px;
+    }
+}
+
+.email-form__item {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 1024px) {
+    .email-form__item {
+        width: 100%;
+        max-width: 470px;
+        margin: 0 auto;
+    }
+}
+
+.email-form__input {
+    display: flex;
+    padding: 17px 0px 17px 32px;
+    border: none;
+    color: var(--Dark-Primary, #2A254B);
+    background-color: #F9F9F9;
+    font-family: "Satoshi";
+    font-size: 16px;
+    line-height: normal;
+    opacity: 0.2;
+}
+
+@media screen and (min-width: 1024px) {
+    .email-form__input {
+        max-width: 350px;
+        width: 100%;
+    }
+}
+
+.email-form__button {
+    padding: 16px 32px 16px 32px;
+    background-color: #2A254B;
+    color: #FFF;
+    border: none;
+    font-family: "Satoshi";
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.features {
+    padding-top: 48px;
+}
+
+.features__body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features__header{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 1024px) {
+    .features__header{
+        flex-direction: row;
+    }
+}
+
+.features__content {
+    padding: 0px 24px 38px 24px;
+}
+
+@media screen and (min-width: 1024px) {
+    .features__content{
+        padding: 72px 100px 54px 84px;
+    }
+}
+
+
+.features__title {
+    padding: 0px 64px 12px 0px;
+    color: #2A254B;
+    font-family: "ClashDisplay";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+@media screen and (min-width: 1024px) {
+    .features__title{
+        max-width: 514px;
+        font-size: 24px;
+        margin-bottom: 25px;
+        padding: 0;
+    }
+}
+
+.features__subtitle {
+    color: #505977;
+    font-family: "Satoshi";
+    font-size: 14px;
+    line-height: 150%;
+    margin-bottom: 64px;
+}
+
+@media screen and (min-width: 1024px) {
+    .features__subtitle{
+        font-size: 16px;
+        margin-bottom: 196px;
+    }
+}
+
+.features__button {
+    width: 100%;
+    margin-bottom: 38px;
+}
+
+@media screen and (min-width: 1024px) {
+    .features__button{
+        width: auto;
+        margin: 0;
+    }
+    
+}
+
+.features__img{
+    width: 100%;
+}
+
+.footer {
+    padding: 40px 25px 20px 25px;
+    background-color: #2A254B;
+}
+
+.footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 96px;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__row{
+        column-gap: 145px;
+    }
+}
+
+.footer__column {
+    color: #FFFFFF;
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-item__title {
+    color: #FFFFFF;
+    font-family: "ClashDisplay";
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.footer-form_item {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-form_item{
+        max-width: 800px;
+        width: 100%;
+    }
+}
+
+.footer-form__input {
+    display: flex;
+    padding: 17px 23px 17px 32px;
+    border: none;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.15);
+    font-family: "Satoshi";
+    font-size: 16px;
+    line-height: normal;
+}
+
+@media screen and (min-width: 1024px) {
+    .footer-form__input{
+        max-width: 500px;
+    }
+    
+}
+
+.footer-form__button {
+    padding: 16px 30px 16px 32px;
+    color: #2A254B;
+    ;
+    background-color: #fff;
+    font-family: "Satoshi";
+    font-size: 16px;
+    border: none;
+    line-height: 150%;
+}
+
+.footer-item_line {
+    margin-top: 16px;
+}
+
+.footer__title {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-family: "Satoshi";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__svg{
+    display: none;
+}
+
+/* button component */
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 16px 32px;
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: color .3s ease, background-color .3s ease;
+}
+
+.button--full-width {
+    width: 100%;
+}
+
+.button--blue {
+    background-color: #2A254B;
+    color: #fff;
+}
+
+.button--blue:hover {
+    background-color: #F9F9F9;
+    color: #2a254b;
+}
+
+.button--grey {
+    background-color: #F9F9F9;
+    color: #2a254b;
+}
+
+.button--grey:hover {
+    background-color: #2A254B;
+    color: #fff;
+}
+
+.button--transparent {
+    background-color: rgba(249, 249, 249, 0.15);
+    color: #FFF;
+}

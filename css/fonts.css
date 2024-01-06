@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'ClashDisplay';
+    src: url('ClashDisplat-Bold.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'ClashDisplay';
+    src: url('ClashDisplay-Extralight.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'ClashDisplay';
+    src: url('ClashDisplat-Light.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'ClashDisplay';
+    src: url('ClashDisplay-Medium.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'ClashDisplay';
+    src: url('ClashDisplay-Regular.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'ClashDisplay';
+    src: url('ClashDisplay-Semibold.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'ClashDisplay';
+    src: url('ClashDisplay-Variable.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Satoshi';
+    src: url('Satoshi-Black.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Satoshi';
+    src: url('Satoshi-BlackItalic.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Satoshi';
+    src: url('Satoshi-Bold.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Satoshi';
+    src: url('Satoshi-BoldItalic.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Satoshi';
+    src: url('Satoshi-Italic.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Satoshi';
+    src: url('Satoshi-Light.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Satoshi';
+    src: url('Satoshi-LightItalic.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Satoshi';
+    src: url('Satoshi-Medium.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Satoshi';
+    src: url('Satoshi-MediumItalic.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Satoshi';
+    src: url('Satoshi-Regular.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Satoshi';
+    src: url('Satoshi-Variable.woff2') format('woff2');
+}
+
+@font-face{
+    font-family: 'Satoshi';
+    src: url('Satoshi-VariebleItalic.woff2') format('woff2');
+}
+
+.h1{
+    font-weight: normal;
+}
